@@ -4,7 +4,10 @@ import { Card, CardBody } from "reactstrap";
 const Video = ({ video }) => {
   return (
     <Card>
-      <p className="text-left px-2">Posted by: {video.userProfile.name}</p>
+      <p className="text-left px-2">
+        Posted by:{" "}
+        {video.userProfile === null ? "Annoymous" : video.userProfile.name}
+      </p>
       <CardBody>
         <iframe
           className="video"

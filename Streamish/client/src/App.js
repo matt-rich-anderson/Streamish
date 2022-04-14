@@ -4,9 +4,13 @@ import VideoList from "./components/VideoList";
 
 function App() {
   return (
-    <div className="App">
-      <VideoList />
-    </div>
+    <>
+      <h1>Streamish</h1>
+      <h2>Video List</h2>
+      <div className="App">
+        <VideoList />
+      </div>
+    </>
   );
 }
 
