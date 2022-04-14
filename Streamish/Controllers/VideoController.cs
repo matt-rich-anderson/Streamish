@@ -57,5 +57,11 @@ namespace Streamish.Controllers
             _videoRepository.Delete(id);
             return NoContent();
         }
+        [HttpGet("GetWithComments")]
+        public IActionResult GetWithComments()
+        {
+            var videos = _videoRepository.GetAllWithComments();
+            return Ok(videos);
+        }
     }
 }
